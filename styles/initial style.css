@@ -1,0 +1,300 @@
+@font-face {
+    font-family: dfds_bold;
+    src: url(dfds-bold.ttf);
+}
+
+body {
+    background-color: #eaedee;
+    margin: 0em;
+    min-width: 10em;
+}
+
+header {
+    z-index: 3;
+    background-color: #FFFFFF;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header img:nth-child(1) {
+    width: 50%;
+    height: auto;
+    margin: 1.5em;
+    margin-top: 2em;
+    display: inline-block;
+    vertical-align: top;
+    top: 0;
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+    display: none;
+    color: #6d6f71;
+    margin-top: 7%;
+}
+
+li {
+    margin: auto;
+    display: inline;
+    font-family: segoe ui;
+}
+
+header img:nth-child(3) {
+    width: 4em;
+    margin: 1.5em 1em 1em 1em;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+form {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    position: absolute;
+    margin-left: -666em;
+}
+
+fieldset {
+    position: relative;
+    width: 100%;
+    border: none;
+    padding: 0em;
+    margin: 0em;
+}
+
+fieldset select {
+    position: relative;
+    padding: 1em 2em;
+    margin-left: 0em;
+    width: 100%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 2em;
+    margin-top: 12em;
+
+}
+
+article:nth-child(1) {
+    width: 75%;
+    background-color: #FFFFFF;
+    padding: 0.5em;
+}
+
+article:nth-child(1) p {
+    font-size: 1.2em;
+    font-family: segoe ui;
+}
+
+h1 {
+    font-family: dfds_bold;
+    font-size: 2.5em;
+}
+
+article:nth-child(1) a {
+    width: 90%;
+    padding: 0.5em;
+    color: white;
+    background-color: #f6861f;
+    border-color: #b86c26;
+    font-family: dfds_bold;
+    font-size: 1.3em;
+    text-align: center;
+    border-radius: 2px;
+    margin: 0 auto;
+}
+
+article {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 80%;
+    min-width: 20%;
+    margin-bottom: 1em;
+}
+
+article header {
+    z-index: 1;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+article header i {
+    width: 2em;
+    height: 2em;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+article header i:nth-of-type(1) {
+    width: 2em;
+    height: 2em;
+    text-indent: -666em;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+article header i:nth-of-type(1) {
+    margin-left: 0.5em;
+    background-image: url(../images/ratingPositive.svg);
+}
+
+article header i:nth-of-type(2) {
+    margin-right: 0.5em;
+    background-image: url(../images/eye.svg);
+    align-items: center;
+    background-position: center;
+}
+
+article header i:nth-of-type(2):after {
+    content: attr(data-views);
+    position: absolute;
+    margin-top: 1.6em;
+    margin-left: 0.1em;
+}
+
+h2 {
+    font-family: dfds_bold;
+}
+
+article a {
+    z-index: 1;
+    display: block;
+}
+
+article a img {
+    height: auto;
+    width: 100%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+@media (min-width: 35em) and (max-width: 65em) {
+    header img:nth-child(1) {
+        width: 40%;
+        height: auto;
+    }
+    ul {
+        display: inline-block;
+    }
+    li {
+        margin-right: 2.5em;
+        width: auto;
+        height: auto
+    }
+    #show {
+        z-index: 8;
+        background: url(../images/zoek.gif);
+        background-size: 5.5em;
+        background-repeat: no-repeat;
+    }
+    #hide {
+        visibility: hidden;
+    }
+    header img:nth-child(3) {
+        display: none;
+    }
+    main {
+        margin: 3em;
+        margin-top: 10em;
+    }
+
+    form:nth-child(1) {
+        display: none;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 15em;
+    }
+    article:nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 87.5%;
+    }
+    article {
+        margin-bottom: 2em;
+    }
+    article a img {
+        height: 20em;
+
+    }
+}
+
+@media (min-width: 65em) {
+    header img:nth-child(1) {
+        width: 15%;
+        height: auto;
+    }
+    ul {
+        display: inline-block;
+        margin-top: 3%;
+        margin-left: 40%;
+
+    }
+
+    li {
+        margin: 2em;
+    }
+
+    #show {
+        z-index: 8;
+        background-position: left;
+        background: url(../images/zoek.gif);
+        background-size: 5.5em;
+        background-repeat: no-repeat;
+    }
+
+    #hide {
+        visibility: hidden;
+    }
+
+    header img:nth-child(3) {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin-top: 15em;
+    }
+
+    article:nth-child(1) a {
+        width: 30%;
+    }
+
+    article:nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        width: 95%;
+    }
+
+    article {
+        margin-bottom: 2em;
+    }
+
+    article a img {
+        height: 20em;
+
+    }
+
+}

@@ -1,0 +1,150 @@
+@font-face {
+    font-family: dfds_bold;
+    src: url(dfds-bold.ttf);
+}
+
+body {
+    background-color: #eaedee;
+    margin: 0em;
+    min-width: 10em;
+}
+
+header {
+    z-index: 3;
+    background-color: #FFFFFF;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header img:nth-child(1) {
+    width: 50%;
+    height: auto;
+    margin: 1.5em;
+    margin-top: 2em;
+    display: inline-block;
+    vertical-align: top;
+    top: 0;
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+    display: none;
+    color: #6d6f71;
+    margin-top: 7%;
+}
+
+li {
+    margin: auto;
+    display: inline;
+    font-family: segoe ui;
+}
+
+header img:nth-child(3) {
+    width: 4em;
+    margin: 1.5em 1em 1em 1em;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 7.5em;
+}
+
+main img {
+    height: auto;
+    width: 100%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #FFFFFF;
+}
+
+main img:nth-child(2) {
+    display: none;
+}
+
+main img:nth-child(3) {
+    display: none;
+
+}
+
+@media (min-width: 35em) and (max-width: 65em) {
+    header img:nth-child(1) {
+        width: 40%;
+        height: auto;
+    }
+    header img:nth-child(3) {
+        display: none;
+    }
+    ul {
+        display: inline-block;
+
+    }
+    li {
+        margin-right: 2.5em;
+    }
+    #show {
+        z-index: 8;
+        background: url(../images/zoek.gif);
+        background-size: 5.5em;
+        background-repeat: no-repeat;
+    }
+    #hide {
+        visibility: hidden;
+    }
+    main {
+        margin: 3em;
+        margin-top: 10em;
+    }
+    main img:nth-child(1) {
+        display: none;
+    }
+    main img:nth-child(2) {
+        display: block;
+    }
+}
+
+@media (min-width: 65em) {
+    header img:nth-child(1) {
+        width: 15%;
+        height: auto;
+    }
+    ul {
+        display: inline-block;
+        margin-top: 3%;
+        margin-left: 40%;
+    }
+    li {
+        margin: 2em;
+    }
+    #show {
+        z-index: 8;
+        background-position: left;
+        background: url(../images/zoek.gif);
+        background-size: 5.5em;
+        background-repeat: no-repeat;
+    }
+    #hide {
+        visibility: hidden;
+    }
+    header img:nth-child(3) {
+        display: none;
+    }
+    main img:nth-child(1) {
+        display: none;
+    }
+    main img:nth-child(2) {
+        display: none;
+    }
+    main img:nth-child(3) {
+        display: block;
+    }
+}
